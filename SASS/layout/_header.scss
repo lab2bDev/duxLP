@@ -1,0 +1,140 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.menu-contact{
+    background-color: $strong-color;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 5px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .social-top{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    .social-icons{
+        li{
+            border: 1px solid $highlight-color-1;
+            background-color: $highlight-color-1;
+            border-radius: 40px;
+            height: 40px;
+            width: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                color: #fff;
+                font-size: 20px;
+            }
+            &:hover{
+                background-color: #fff;
+                a{
+                    color: $highlight-color-1;
+                }
+            }
+        }
+    }
+    .contact-icons{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            font-size: 20px;
+            color: #fff;
+            i{
+                color: $secondary-color;
+            }
+        }
+        .item-whats{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whats-btn{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $secondary-color;
+            border: 1px solid $secondary-color;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin: 0 5px;
+            &:hover{
+                color: $secondary-color;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 15px 0;
+    padding: 30px 0 0;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li{
+            margin: 0 5px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .logo-menu{
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        margin: 30px 0;
+        img{
+            max-width: 100%;
+        }
+    }
+    .list-menu{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        nav{
+            width: 100%;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                a{
+                    color: $highlight-color-1;
+                    // font-weight: bold;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+    }
+}
