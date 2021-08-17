@@ -2,81 +2,48 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.banner{
-    .carrousel{
-        .item-carrousel{
-            position: relative;
-            
-            img{
-                width: 100%;
-                filter: sepia(0.3);
-            }
-        }
-        .desc-carrousel{
-            position: absolute;
-            top: 25%;
-            color: #fff;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            left: 50%;
-
-
-            .title-carrousel{
-                font-weight: bold;
-                font-size: 4rem;
-                line-height: 1;
-                text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.3);
-            }
-            .sub-title-carousel{
-                text-align: center;
-                font-weight: normal;
-                line-height: 1;
-                font-size: 3rem;
-            }
-            span{
-                font-size: 1.2rem;
-                width: 85%;
-                text-align: center;
-                // font-weight: bold;
-            }
-        }
+@mixin color-default($color) {
+    $color: $color;
+}
+@mixin color-strong($color) {
+    $color: $color;
+}
+.lpColor{
+    &--blue{
+        @include color-default($blueColor);
+        @include color-strong($blueColorStrong)
+        
     }
     
-    .bloco-empresa{
-        @include background-opacity($primary-color, 0.3);
-        height: 200px;
-        display: flex;
-        align-items: flex-end;
 
-        .desc-empresa{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-            .text-empresa{
-                text-align: center;
-                h2{
-                    font-weight: bold;
-                    font-size: 2.5rem;
-                    color: #000;
-                }
-                p{
-                    color: $highlight-color-1;
-                    font-size: 1.6rem;
-                    font-weight: 100;
-                }
-            }
+} 
+    
 
-            .icone-empresa{
-                margin: 0 30px;
-                img{
-                    max-width: 100%;
-                    width: 75px;
-                }
-            }
-
+.duxElement-image-banner{
+    position: relative;
+    img{
+        width: 100%;
+    }
+}
+.sup-itens-banner{
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 30px;
+}
+.sup-text{
+    .banner-title-default{
+        @include setColor ($blueColorStrong );
+        .banner-title-strog{
+            @include setColor ($blueColorStrong);
         }
     }
+}
 
+
+.roww .coll {
+    height: 100px;
+    background: green;
 }

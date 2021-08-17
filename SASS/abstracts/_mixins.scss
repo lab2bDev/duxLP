@@ -51,3 +51,20 @@
     background: $color; /* The Fallback */
     background: rgba($color, $opacity);
 }
+
+
+@mixin setColor($color) {
+    color: $color;
+} 
+
+@mixin backGround($color) {
+    background-color: $color;
+}
+
+@mixin setColorStrong($color) {
+    color: $color;
+} 
+
+@mixin backGroundStrong($color) {
+    background-color: $color;
+}
